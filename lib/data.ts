@@ -4,9 +4,9 @@ export const GENERAL_INFO = {
     email: 'ikechukwungoesina@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Njay, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
+    oldPortfolio: 'https://unixmachine.netlify.app',
     upworkProfile: 'https://x.com/njay2trappy',
 };
 

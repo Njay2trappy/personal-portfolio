@@ -7,17 +7,28 @@ interface RepoStats {
 }
 
 const Footer = async () => {
-    const repoStats = await fetch(
-        'https://api.github.com/repos/tajmirul/portfolio-2.0',
-        {
-            next: {
-                revalidate: 60 * 60, // 1 hour
-            },
-        },
-    );
+    const repoUrl = 'https://github.com/Njay2trappy/personal-portfolio';
+    let stargazers_count = 0;
+    let forks_count = 0;
 
-    const { stargazers_count, forks_count } =
-        (await repoStats.json()) as RepoStats;
+    try {
+        const repoStats = await fetch(
+            'https://api.github.com/repos/Njay2trappy/personal-portfolio',
+            {
+                next: {
+                    revalidate: 60 * 60, // 1 hour
+                },
+            },
+        );
+
+        if (repoStats.ok) {
+            const stats = (await repoStats.json()) as RepoStats;
+            stargazers_count = stats.stargazers_count ?? 0;
+            forks_count = stats.forks_count ?? 0;
+        }
+    } catch {
+        // keep fallback values when API is unavailable
+    }
 
     return (
         <footer className="text-center pb-5" id="contact">
@@ -32,13 +43,12 @@ const Footer = async () => {
 
                 <div className="">
                     <a
-                        href="https://github.com/Tajmirul/portfolio-2.0"
+                        href={repoUrl}
                         target="_blank"
+                        rel="noreferrer"
                         className="leading-none text-muted-foreground hover:underline hover:text-white"
                     >
-                        Originally inspired by Tajmirul Islam.
-                        <br />
-                        Rebuilt and customized by Njay
+                        Designed and built by Njay
                         <div className="flex items-center justify-center gap-5 pt-1">
                             <span className="flex items-center gap-2">
                                 <Star size={18} /> {stargazers_count}
@@ -48,21 +58,6 @@ const Footer = async () => {
                             </span>
                         </div>
                     </a>
-
-                    {/* Note: If you are not Tajmirul, use this copyright message instead */}
-                    {/* <a href='https://www.me.toinfinite.dev/' className="leading-none text-muted-foreground hover:underline hover:text-white">
-                        Design & built by Tajmirul Islam <br />
-                        Revised by YOUR NAME
-
-                        <div className="flex items-center justify-center gap-5 pt-1">
-                            <span className='flex items-center gap-2'>
-                                <Star size={14} /> {stargazers_count}
-                            </span>
-                            <span className='flex items-center gap-2'>
-                                <GitFork size={14} /> {forks_count}
-                            </span>
-                        </div>
-                    </a> */}
                 </div>
             </div>
         </footer>

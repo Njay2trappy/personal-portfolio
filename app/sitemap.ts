@@ -1,9 +1,12 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+    const siteUrl =
+        process.env.NEXT_PUBLIC_SITE_URL || 'https://unixmachine.netlify.app';
+
     return [
         {
-            url: 'https://me.toinfinite.dev',
+            url: siteUrl,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 1,
