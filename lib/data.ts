@@ -1,34 +1,33 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'ikechukwungoesina@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Tajmirul, I am reaching out to you because...',
 
     oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    upworkProfile: 'https://x.com/njay2trappy',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/Njay2trappy' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/ikechukwu-ngoesina-281645349/' },
+    { name: 'x', url: 'https://x.com/njay2trappy' },
 ];
 
 export const MY_STACK = {
     frontend: [
         {
-            name: 'JavaScript',
-            icon: '/logo/js.png',
-        },
-        {
             name: 'TypeScript',
             icon: '/logo/ts.png',
         },
         {
-            name: 'React',
+            name: 'JavaScript',
+            icon: '/logo/js.png',
+        },
+        {
+            name: 'React.js',
             icon: '/logo/react.png',
         },
         {
@@ -36,28 +35,16 @@ export const MY_STACK = {
             icon: '/logo/next.png',
         },
         {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
             name: 'Tailwind CSS',
             icon: '/logo/tailwind.png',
         },
         {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
+            name: 'HTML',
+            icon: '/logo/html5.svg',
         },
         {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
+            name: 'CSS',
+            icon: '/logo/css3.svg',
         },
     ],
     backend: [
@@ -66,12 +53,24 @@ export const MY_STACK = {
             icon: '/logo/node.png',
         },
         {
+            name: 'Express.js',
+            icon: '/logo/express.png',
+        },
+        {
             name: 'NestJS',
             icon: '/logo/nest.svg',
         },
         {
-            name: 'Express.js',
-            icon: '/logo/express.png',
+            name: 'Rust',
+            icon: '/logo/rust.svg',
+        },
+        {
+            name: 'Node GraphQL',
+            icon: '/logo/graphql.svg',
+        },
+        {
+            name: 'Python',
+            icon: '/logo/python.svg',
         },
     ],
     database: [
@@ -105,204 +104,196 @@ export const MY_STACK = {
             name: 'AWS',
             icon: '/logo/aws.png',
         },
+        {
+            name: 'Render',
+            icon: '/logo/render.png',
+        },
+        {
+            name: 'Burp Suite',
+            icon: '/logo/burpsuite.svg',
+        },
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
+        title: 'VSCGames',
+        slug: 'vscgames',
         year: 2025,
-        description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
+        description:
+            'VSCGames is a digital commerce platform for game top-ups, voucher distribution, and payment services. Built with Node.js, GraphQL, and MongoDB, the system automates supplier fulfillment, supports merchant API integrations with secure key-based access, and enables real-time transactions through Telegram commerce flows.',
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
+      Backend Engineer <br/>
+      Core contributions:
       <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
+        <li>Designed and implemented GraphQL backend services for digital product workflows</li>
+        <li>Integrated supplier APIs to automate voucher and top-up fulfillment</li>
+        <li>Built merchant integration pipelines with secure authentication and access controls</li>
+        <li>Enabled Telegram-based commerce with real-time purchase and delivery processing</li>
       </ul>
       `,
         techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
+            'Node.js',
+            'GraphQL',
+            'MongoDB',
+            'Express.js',
+            'REST APIs',
+            'Telegram Bot API',
+            'Axios',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
+        thumbnail:
+            'https://gray-rare-salamander-705.mypinata.cloud/ipfs/bafybeic77tz5breuqvuqnsro3davooohuzqoiyvme4dxlhm4haj67musyq',
+        longThumbnail:
+            'https://gray-rare-salamander-705.mypinata.cloud/ipfs/bafybeic77tz5breuqvuqnsro3davooohuzqoiyvme4dxlhm4haj67musyq',
         images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
+            'https://gray-rare-salamander-705.mypinata.cloud/ipfs/bafybeic77tz5breuqvuqnsro3davooohuzqoiyvme4dxlhm4haj67musyq','https://gray-rare-salamander-705.mypinata.cloud/ipfs/bafybeia7j53aknf4xf7bcrc2e5mcvn3ndfouuafyhtnyaygrwaofwysk5i','https://gray-rare-salamander-705.mypinata.cloud/ipfs/bafybeia4i2vqqjg45n7uh6rcaur5rvyjjlndmfotecrz7nrrbzcqgdx4k4'
         ],
+        liveUrl: 'https://vscgames.com',
     },
     {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
-        ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
-        images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
-        ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
+        title: 'Argon',
+        slug: 'argon-payment-gateway',
+        year: 2024,
         description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
+            'Argon is a production-grade multi-chain payment gateway supporting AirDAO, Solana, BSC (BEP20), and TON. Built with Node.js, GraphQL, and MongoDB, it provides secure transaction orchestration, wallet integrations, and on-chain verification across heterogeneous blockchain networks.',
+        role: `
+      Blockchain and Backend Engineer <br/>
+      Core contributions:
+      <ul>
+        <li>Architected backend services for reliable multi-chain payment execution</li>
+        <li>Integrated blockchain SDKs for wallet operations, transfers, and verification</li>
+        <li>Implemented scalable data models for transaction history and balance tracking</li>
+      </ul>
+      `,
         techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
+            'Node.js',
+            'GraphQL',
+            'MongoDB',
+            'Blockchain',
+            'USDC',
+            'BSC / BEP20',
+            'TON',
+            'Git',
         ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
+        thumbnail: 'https://i.ibb.co/qMfVtvxJ/Screenshot-2026-06-21-at-22-37-48.png',
+        longThumbnail: 'https://i.ibb.co/qMfVtvxJ/Screenshot-2026-06-21-at-22-37-48.png',
+        images: ['https://i.ibb.co/qMfVtvxJ/Screenshot-2026-06-21-at-22-37-48.png','https://i.ibb.co/n8Vk3TrM/Screenshot-2026-06-21-at-22-38-24.png','https://i.ibb.co/DDyyWjFW/Screenshot-2026-06-21-at-22-38-37.png','https://i.ibb.co/0RtJDWW7/Screenshot-2026-06-21-at-22-39-10.png','https://i.ibb.co/Y4VnpVp2/Screenshot-2026-06-21-at-22-39-23.png'],
+        liveUrl: 'https://pay.gameket.io',
+        sourceCode: 'https://github.com/Njay2trappy/Argon',
     },
     {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
+        title: 'DecentWork',
+        slug: 'decentwork',
+        year: 2025,
         description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
+            'DecentWork is a decentralized freelancing marketplace built on Arweave. Its Node.js and GraphQL backend manages job postings, proposals, and contracts, while MongoDB supports low-latency retrieval and Arweave ensures immutable storage for critical agreement data.',
+        role: `
+      Backend Engineer <br/>
+      Core contributions:
+      <ul>
+        <li>Developed the marketplace backend using GraphQL APIs and modular services</li>
+        <li>Integrated Arweave for immutable contract and record persistence</li>
+        <li>Implemented escrow and trustless transaction workflows for marketplace safety</li>
+      </ul>
+      `,
+        techStack: ['Node.js', 'GraphQL', 'Arweave', 'MongoDB', 'JWT', 'Git'],
+        thumbnail: 'https://i.ibb.co/hvRg7hW/Screenshot-2026-06-21-at-23-06-09.png',
+        longThumbnail: 'https://i.ibb.co/fYnqKvhm/Screenshot-2026-06-21-at-23-06-17.png',
+        images: ['https://i.ibb.co/fYnqKvhm/Screenshot-2026-06-21-at-23-06-17.png','https://i.ibb.co/hvRg7hW/Screenshot-2026-06-21-at-23-06-09.png','https://i.ibb.co/Qvs3ZZJ1/Screenshot-2026-06-21-at-23-05-53.png'],
+        liveUrl: 'https://decentwork-ytit.vercel.app/',
     },
     {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+        title: 'Zhuzh Finance',
+        slug: 'zhuzh-finance',
+        year: 2026,
+        description:
+            'Zhuzh Finance is a fintech-oriented product focused on building secure and scalable backend infrastructure for transaction workflows, service orchestration, and financial data reliability.',
+        role: `
+      Backend Engineer and Co-Founder <br/>
+      Core contributions:
+      <ul>
+        <li>Designed backend architecture for secure transaction and account workflows</li>
+        <li>Implemented API services focused on reliability, observability, and maintainability</li>
+        <li>Led product and technical decisions across engineering and delivery execution</li>
+      </ul>
+      `,
+        techStack: ['Node.js', 'GraphQL', 'MongoDB', 'REST APIs', 'Docker'],
+        thumbnail: 'https://i.ibb.co/tMspsg5v/Thumbnails.png',
+        longThumbnail: 'https://i.ibb.co/tMB489Pj/Home-Above-720.png',
+        images: ['https://i.ibb.co/tMspsg5v/Thumbnails.png','https://i.ibb.co/tMB489Pj/Home-Above-720.png','https://i.ibb.co/tMB489Pj/Home-Above-720.png'],
+    },
+    {
+        title: 'Hubbleads',
+        slug: 'hubbleads',
+        year: 2024,
+        description:
+            'Hubbleads is an ad-tech product initiative centered on automation, campaign performance workflows, and scalable service infrastructure for digital growth operations.',
+        role: `
+      Software Engineer and Founder <br/>
+      Core contributions:
+      <ul>
+        <li>Built and maintained backend services for campaign and data processing workflows</li>
+        <li>Established technical direction, product scoping, and execution strategy</li>
+        <li>Integrated automation pipelines to improve operational efficiency and reporting</li>
+      </ul>
+      `,
+        techStack: ['Node.js', 'Python', 'MongoDB', 'REST APIs', 'AWS'],
+        thumbnail: 'https://i.ibb.co/60XfB5Fh/Frame-270988353.png',
+        longThumbnail: 'https://i.ibb.co/HpBwx70f/Frame-270988472.png',
+        images: ['https://i.ibb.co/60XfB5Fh/Frame-270988353.png','https://i.ibb.co/HpBwx70f/Frame-270988472.png','https://i.ibb.co/gLTNzn1R/Frame-270988354.png','https://i.ibb.co/rKfGm5X1/Property-1-Frame-270988353.png'],
+    },
+    {
+        title: 'Gameket',
+        slug: 'gameket',
+        year: 2024,
+        description:
+            'Gameket is a digital products and payments platform focused on game top-ups, vouchers, and transaction processing with emphasis on reliability, scale, and user trust.',
+        role: `
+      Full-Stack Engineer <br/>
+      Core contributions:
+      <ul>
+        <li>Developed backend APIs and service logic for orders, payments, and fulfillment</li>
+        <li>Contributed to frontend features for product discovery and purchase workflows</li>
+        <li>Improved platform stability and performance across core transaction paths</li>
+      </ul>
+      `,
+        techStack: ['Node.js', 'Next.js', 'GraphQL', 'MongoDB', 'Docker'],
+        thumbnail: 'https://i.ibb.co/cX88X869/Screenshot-2026-06-21-at-23-32-22.png',
+        longThumbnail: 'https://i.ibb.co/C5bQqMK8/Screenshot-2026-06-21-at-23-35-03.png',
+        images: ['https://i.ibb.co/cX88X869/Screenshot-2026-06-21-at-23-32-22.png','https://i.ibb.co/tTvHRyP3/Screenshot-2026-06-21-at-23-34-46.png','https://i.ibb.co/yFtdsVCt/Screenshot-2026-06-21-at-23-34-26.png','https://i.ibb.co/kg5NQj65/Screenshot-2026-06-21-at-23-33-08.png','https://i.ibb.co/zhmJ8kQZ/Screenshot-2026-06-21-at-23-32-50.png'],
+        liveUrl: 'https://gameket.io',
     },
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Backend Engineer and Co-Founder',
+        company: 'Zhuzh FInance',
+        duration: 'Sep 2025 - Present',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        title: 'Software Engineer and Founder',
+        company: 'Hubbleads',
+        duration: 'May 2024 - Present',
     },
     {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        title: 'Software Engineer, Creative director and Co-Founder',
+        company: 'Mondour',
+        duration: 'Jun 2026 - Present',
     },
     {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Software Engineer (Full-Stack)',
+        company: 'VSCgames',
+        duration: 'May 2025 - Jun 2026',
+    },
+    {
+        title: 'Full-Stack Engineer',
+        company: 'Gameket',
+        duration: 'Apr 2024 - Present',
+    },
+    {
+        title: 'Founder & Engineer',
+        company: 'Argon Payments',
+        duration: 'Nov 2024 - Present',
     },
 ];

@@ -84,9 +84,9 @@ const Navbar = () => {
             >
                 <div
                     className={cn(
-                        'fixed inset-0 scale-150 translate-x-1/2 rounded-[50%] bg-background-light duration-700 delay-150 z-[-1]',
+                        'absolute inset-0 scale-150 translate-x-1/2 rounded-[50%] bg-background-light duration-700 delay-150 z-[-1] opacity-0',
                         {
-                            'translate-x-0': isMenuOpen,
+                            'translate-x-0 opacity-100': isMenuOpen,
                         },
                     )}
                 ></div>

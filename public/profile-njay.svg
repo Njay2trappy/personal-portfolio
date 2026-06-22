@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Njay profile placeholder</title>
+  <desc id="desc">Blue gradient circular placeholder with initials NJ</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#0f172a" />
+  <circle cx="256" cy="256" r="220" fill="url(#bg)" />
+  <text
+    x="50%"
+    y="53%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Inter, Arial, sans-serif"
+    font-size="168"
+    font-weight="700"
+    fill="#e2e8f0"
+  >
+    NJ
+  </text>
+</svg>

@@ -100,7 +100,8 @@ const ProjectList = () => {
             return;
         }
 
-        setSelectedProject(slug);
+        const project = PROJECTS.find((item) => item.slug === slug);
+        setSelectedProject(project?.thumbnail ? slug : null);
     };
 
     return (
@@ -114,24 +115,26 @@ const ProjectList = () => {
                             className="max-md:hidden absolute right-0 top-0 z-[1] pointer-events-none w-[200px] xl:w-[350px] aspect-[3/4] overflow-hidden opacity-0"
                             ref={imageContainer}
                         >
-                            {PROJECTS.map((project) => (
-                                <Image
-                                    src={project.thumbnail}
-                                    alt="Project"
-                                    width="400"
-                                    height="500"
-                                    className={cn(
-                                        'absolute inset-0 transition-all duration-500 w-full h-full object-cover',
-                                        {
-                                            'opacity-0':
-                                                project.slug !==
-                                                selectedProject,
-                                        },
-                                    )}
-                                    ref={imageRef}
-                                    key={project.slug}
-                                />
-                            ))}
+                            {PROJECTS.filter((project) => !!project.thumbnail).map(
+                                (project) => (
+                                    <Image
+                                        src={project.thumbnail!}
+                                        alt="Project"
+                                        width="400"
+                                        height="500"
+                                        className={cn(
+                                            'absolute inset-0 transition-all duration-500 w-full h-full object-cover',
+                                            {
+                                                'opacity-0':
+                                                    project.slug !==
+                                                    selectedProject,
+                                            },
+                                        )}
+                                        ref={imageRef}
+                                        key={project.slug}
+                                    />
+                                ),
+                            )}
                         </div>
                     )}
 
